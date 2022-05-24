@@ -1,9 +1,10 @@
 import * as React from "react";
 import AegleProcess from "../components/Home/AegleProcess";
-import Hero from "../components/Home/Hero";
+import Hero from "../components/Simulate/Hero";
 import Nutshell from "../components/Home/Nutshell";
-import Footer from "../components/Layout/footer";
+import Footer from "../components/Layout/footer-secondary";
 import Navbar from "../components/Layout/navbar";
+import Simulate from "../components/Simulate";
 
 // styles
 const pageStyles = {
@@ -18,14 +19,15 @@ const pageStyles = {
 const IndexPage = () => {
   return (
     <div className="main-container">
-      <div className="home-top">
+      <div className="home-top-simulate">
         <Navbar />
         <Hero />
       </div>
-      <Nutshell />
-      <div className="home-bottom">
-        <AegleProcess />
-      </div>
+      <Simulate />
+      {/* <div className="home-bottom">
+
+      <AegleProcess />
+      </div> */}
 
       <Footer />
     </div>
